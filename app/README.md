@@ -88,4 +88,6 @@ Now you can start your app
 
 ## Adding Base Styles
 
+Best practices for adding your own global base styles on top of Tailwind.
+
 Source: https://tailwindcss.com/docs/adding-base-styles
