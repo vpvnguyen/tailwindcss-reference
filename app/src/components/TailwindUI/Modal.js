@@ -1,6 +1,8 @@
 const Modal = () => (
   <>
-    <h1>MODAL</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      MODAL
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">

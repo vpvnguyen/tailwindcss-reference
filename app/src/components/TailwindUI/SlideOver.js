@@ -1,6 +1,8 @@
 const SlideOver = () => (
   <>
-    <h1>SLIDE OVER</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      SLIDE OVER
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="fixed inset-0 overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">

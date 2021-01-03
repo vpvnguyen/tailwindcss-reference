@@ -27,14 +27,10 @@ const Home = () => (
     <Landing />
     <Form />
     <TodoPagination />
-
-    <h1>CTA</h1>
     <CTA />
 
-    <h1>HERO</h1>
     <Hero />
 
-    <h1>FEATURE</h1>
     <Feature />
 
     <Heading />

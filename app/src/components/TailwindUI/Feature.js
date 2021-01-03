@@ -1,6 +1,8 @@
 const Feature = () => (
   <>
-    <h1>FEATURE</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      FEATURE
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

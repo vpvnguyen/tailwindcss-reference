@@ -1,6 +1,8 @@
 const Avatar = () => (
   <>
-    <h1>AVATAR</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      AVATAR
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="flex -space-x-1 overflow-hidden">
       <img

@@ -1,6 +1,8 @@
 const Description = () => (
   <>
-    <h1>DESCRIPTION</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      DESCRIPTION
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">

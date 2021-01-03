@@ -1,6 +1,8 @@
 const Heading = () => (
   <>
-    <h1>HEADING</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      HEADING
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="lg:flex lg:items-center lg:justify-between">
       <div className="flex-1 min-w-0">

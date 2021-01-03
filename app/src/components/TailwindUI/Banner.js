@@ -1,6 +1,8 @@
 const Banner = () => (
   <>
-    <h1>BANNER</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      BANNER
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <div className="bg-indigo-600">
       <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">

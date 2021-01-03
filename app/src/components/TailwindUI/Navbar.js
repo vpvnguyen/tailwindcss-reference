@@ -1,6 +1,8 @@
 const Navbar = () => (
   <>
-    <h1>NAVBAR</h1>
+    <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
+      NAVBAR
+    </h1>
     {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
