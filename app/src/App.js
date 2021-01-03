@@ -21,45 +21,37 @@ import Avatar from "./components/TailwindUI/Avatar";
 import SimpleDropdown from "./components/TailwindUI/SimpleDropdown";
 import DividedDropdown from "./components/TailwindUI/DividedDropdown";
 import Banner from "./components/TailwindUI/Banner";
+import DarkMode from "./components/TailwindUI/DarkMode";
 
 const Home = () => (
   <>
     <Landing />
     <Form />
     <TodoPagination />
+  </>
+);
+
+const TailwindUI = () => (
+  <>
     <CTA />
-
     <Hero />
-
     <Feature />
-
     <Heading />
-
     <Description />
-
     <FormLayout />
-
     <Select />
-
     <h1>LOGIN</h1>
     <h1>LOGIN</h1>
     <Login />
-
     <Navbar />
-
     <Pagination />
-
     {/* <Modal /> */}
-
     {/* <SlideOver /> */}
-
     <Avatar />
-
     <SimpleDropdown />
-
     <DividedDropdown />
-
     <Banner />
+    <DarkMode />
   </>
 );
 
@@ -69,8 +61,8 @@ export default function App() {
   return (
     <Router>
       <Home path="/" />
-
-      <Dashboard path="/dashboard" />
+      <TailwindUI path="ui" />
+      <Dashboard path="dashboard" />
       <ResponsiveDesign path="responsive" />
       <CatchAll path="*" />
     </Router>
