@@ -156,7 +156,7 @@ const Form = () => {
                     Full Name
                   </label>
                   <input
-                    className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                    className="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                     type="text"
                     name="name"
                     placeholder="name"
@@ -174,24 +174,30 @@ const Form = () => {
                   Message
                 </label>
                 <input
-                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
+                  className="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
                   type="text"
                   name="message"
                   placeholder="message"
                   value={formData.message || ""}
                   onChange={handleOnChange}
                 />
-                <p className="mt-2 text-sm text-gray-500">
-                  Brief description for your profile. URLs are hyperlinked.
-                </p>
+                <p className="mt-2 text-sm text-gray-500">{formNotification}</p>
               </div>
             </div>
             <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
               <button
                 type="submit"
-                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
+                disabled={isFormInvalid(formData)}
+                onClick={handleSubmit}
               >
-                Save
+                Submit
+              </button>
+              <button
+                className="px-4 py-3 bg-gray-50 text-right sm:px-6"
+                onClick={clearForm}
+              >
+                Clear
               </button>
             </div>
           </div>
