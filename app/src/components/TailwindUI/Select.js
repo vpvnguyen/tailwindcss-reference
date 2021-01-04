@@ -1,5 +1,5 @@
 const Select = () => (
-  <>
+  <div className="mb-16">
     <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
       SELECT
     </h1>
@@ -121,7 +121,7 @@ const Select = () => (
         </div>
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default Select;

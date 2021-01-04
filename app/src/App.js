@@ -40,8 +40,6 @@ const TailwindUI = () => (
     <Description />
     <FormLayout />
     <Select />
-    <h1>LOGIN</h1>
-    <h1>LOGIN</h1>
     <Login />
     <Navbar />
     <Pagination />

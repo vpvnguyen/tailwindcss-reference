@@ -1,5 +1,5 @@
 const Navbar = () => (
-  <>
+  <div className="mb-28">
     <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
       NAVBAR
     </h1>
@@ -216,7 +216,7 @@ const Navbar = () => (
         </div>
       </div>
     </nav>
-  </>
+  </div>
 );
 
 export default Navbar;
