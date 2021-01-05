@@ -25,6 +25,17 @@ import DarkMode from "./components/TailwindUI/DarkMode";
 
 const Home = () => (
   <>
+    <nav className="container mx-auto text-center p-8">
+      <a className="border-solid text-xl font-bold p-8" href="/ui">
+        UI
+      </a>
+      <a className="border-solid text-xl font-bold p-4" href="/dashboard">
+        Dashboard
+      </a>
+      <a className="border-solid text-xl font-bold p-4" href="/ui">
+        Responsive Design
+      </a>
+    </nav>
     <Landing />
     <Form />
     <TodoPagination />
