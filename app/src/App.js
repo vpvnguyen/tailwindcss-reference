@@ -64,7 +64,7 @@ const TailwindUI = () => (
   </>
 );
 
-const CatchAll = () => <h1>404</h1>;
+const CatchAll = () => <Home />;
 
 export default function App() {
   return (
