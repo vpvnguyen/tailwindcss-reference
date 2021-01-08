@@ -101,44 +101,6 @@ const Form = () => {
   };
 
   return (
-    // <form>
-    //   <h1>Form</h1>
-
-    //   <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-    //     <div className="flex-shrink-0">
-    //       <p>Logo</p>
-    //     </div>
-    //     <div>
-    //       <div className="text-xl font-medium text-black">
-    //         <label htmlFor="name">Full Name</label>
-    //         <input
-    //           type="text"
-    //           name="name"
-    //           placeholder="name"
-    //           value={formData.name || ""}
-    //           onChange={handleOnChange}
-    //         />
-    //       </div>
-    //       <div className="text-gray-500">
-    //         <label htmlFor="name">Full Name</label>
-    //         <input
-    //           type="text"
-    //           name="name"
-    //           placeholder="name"
-    //           value={formData.name || ""}
-    //           onChange={handleOnChange}
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   <div>{formNotification}</div>
-
-    //   <button onClick={handleSubmit} disabled={isFormInvalid(formData)}>
-    //     Submit
-    //   </button>
-    //   <button onClick={clearForm}>Clear</button>
-    // </form>
     <>
       <h1 className="text-4xl font-bold text-center border-8 border-gray-500 bg-gray-200">
         FORM
