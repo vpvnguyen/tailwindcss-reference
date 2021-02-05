@@ -24,6 +24,7 @@ import Banner from "./components/TailwindUI/Banner";
 import DarkMode from "./components/TailwindUI/DarkMode";
 import LoremCards from "./components/LoremCards";
 import CSSTricksProfile from "./components/CSS-Tricks/Profile";
+import CSSTricksForm from "./components/CSS-Tricks/Form";
 
 const Nav = ({ children }) => (
   <>
@@ -50,6 +51,7 @@ const Sandbox = () => {
   return (
     <div className="container mx-auto">
       <CSSTricksProfile />
+      <CSSTricksForm />
       <LoremCards />
     </div>
   );
