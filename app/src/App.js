@@ -22,12 +22,18 @@ import SimpleDropdown from "./components/TailwindUI/SimpleDropdown";
 import DividedDropdown from "./components/TailwindUI/DividedDropdown";
 import Banner from "./components/TailwindUI/Banner";
 import DarkMode from "./components/TailwindUI/DarkMode";
+import LoremCards from "./components/LoremCards";
+import CSSTricksProfile from "./components/CSS-Tricks/Profile";
+import CSSTricksForm from "./components/CSS-Tricks/Form";
 
-const Home = () => (
+const Nav = ({ children }) => (
   <>
-    <nav className="container mx-auto text-center p-8">
+    <nav className="text-center p-8 bg-green-500">
+      <a className="border-solid text-xl font-bold p-4" href="/sandbox">
+        Sandbox
+      </a>
       <a className="border-solid text-xl font-bold p-8" href="/ui">
-        UI
+        Tailwind UI
       </a>
       <a className="border-solid text-xl font-bold p-4" href="/dashboard">
         Dashboard
@@ -36,14 +42,26 @@ const Home = () => (
         Responsive Design
       </a>
     </nav>
-    <Landing />
-    <Form />
-    <TodoPagination />
+
+    {children}
   </>
 );
 
+const Sandbox = () => {
+  return (
+    <div className="container mx-auto">
+      <CSSTricksProfile />
+      <CSSTricksForm />
+      <LoremCards />
+    </div>
+  );
+};
+
 const TailwindUI = () => (
   <>
+    <Landing />
+    <Form />
+    <TodoPagination />
     <CTA />
     <Hero />
     <Feature />
@@ -64,15 +82,17 @@ const TailwindUI = () => (
   </>
 );
 
-const CatchAll = () => <Home />;
+const CatchAll = () => <Nav />;
 
 export default function App() {
   return (
     <Router>
-      <Home path="/" />
-      <TailwindUI path="ui" />
-      <Dashboard path="dashboard" />
-      <ResponsiveDesign path="responsive" />
+      <Nav path="/">
+        <Sandbox path="sandbox" />
+        <TailwindUI path="ui" />
+        <Dashboard path="dashboard" />
+        <ResponsiveDesign path="responsive" />
+      </Nav>
       <CatchAll path="*" />
     </Router>
   );
