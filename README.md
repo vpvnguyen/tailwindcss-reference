@@ -59,7 +59,7 @@ Generate a `tailwind.config.js` file
 yarn exec tailwindcss init
 ```
 
-In `tailwind.config.js`, configure the `purge` option with the paths to all of your components so Tailwind can tree-shake unused styls in prod builds
+In `tailwind.config.js`, configure the `purge` option with the paths to all of your components so Tailwind can tree-shake unused styls in prod builds. This will reduce significant bloat from the project
 
 ```diff
 // tailwind.config.js
