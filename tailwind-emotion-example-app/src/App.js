@@ -1,7 +1,13 @@
+import styled from "@emotion/styled";
+
+const Button = styled.button`
+  color: hotpink;
+`;
+
 function App() {
   return (
     <div className="App">
-      <div className="text-red-500">test</div>
+      <Button>Hot Pink</Button>
     </div>
   );
 }
