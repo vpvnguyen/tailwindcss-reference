@@ -5,14 +5,19 @@
 - Install React:
 
 ```
-yarn create create-react-app my-app
-
+yarn create react-app my-app
 ```
 
 - Install twin.macro, tailwindcss, emotion:
 
 ```
 yarn add twin.macro tailwindcss @emotion/react @emotion/styled
+```
+
+- Install Babel plug-in:
+
+```
+yarn add -D @emotion/babel-plugin-jsx-pragmatic
 ```
 
 - Install CRACO:
