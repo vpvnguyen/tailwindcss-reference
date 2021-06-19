@@ -34,7 +34,7 @@ function App() {
       {/* <FeatureSection /> */}
       {/* <CTASection /> */}
 
-      {/* <Header /> */}
+      <Header />
       {/* <Banner /> */}
       {/* <Avatar /> */}
       {/* <SimpleDropdown /> */}
@@ -53,7 +53,7 @@ function App() {
       {/* <SelectMenu /> */}
       {/* <SignIn /> */}
 
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Pagination /> */}
 
       {/* <Modal /> */}
