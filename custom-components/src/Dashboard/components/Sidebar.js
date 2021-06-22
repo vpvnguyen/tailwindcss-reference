@@ -33,22 +33,30 @@ export default function Sidebar() {
 
   return (
     <>
-      <nav className="bg-white min-h-full flex flex-col flex-nowrap items-center justify-between mx-auto whitespace-nowrap">
-        <div className="flex items-center">
+      <nav
+        className={`${
+          isExpanded ? "w-44" : ""
+        } bg-white min-h-full flex flex-col flex-nowrap items-center justify-between mx-auto whitespace-nowrap`}
+      >
+        <div className="px-2 w-full flex items-center justify-center">
           {/* Nav Toggle */}
           <button
-            className="opacity-50 bg-transparent focus:outline-none"
+            className="appearance-none opacity-50 bg-transparent focus:outline-none h-10 w-10 flex items-center justify-center"
             onClick={() => setIsExpanded(!isExpanded)}
           >
             <i className="fas fa-bars"></i>
           </button>
           {/* Brand */}
-          <Link className=" " to="/">
-            {isExpanded && <p className="ml-2">Tailwind</p>}
+          <Link className={isExpanded ? "flex-1" : "hidden"} to="/">
+            Tailwind
           </Link>
         </div>
+
+        {/* Divider */}
+        <hr className="min-w-full" />
+
         {/* Nav Container */}
-        <div className="p-2 flex flex-col overflow-y-auto overflow-x-hidden flex-1">
+        <div className="p-2 w-full flex flex-col overflow-y-auto overflow-x-hidden flex-1">
           {/* Top Nav Menu */}
           <ul className="flex flex-col">
             {navRoutes.map(({ name, path, icon }) => (
@@ -67,7 +75,9 @@ export default function Sidebar() {
           <hr className="min-w-full" />
 
           {/* Bottom Nav Heading */}
-          <h6 className={`${isExpanded ? "" : "hidden"}`}>Documentation</h6>
+          <h6 className={`p-2 text-center ${isExpanded ? "" : "hidden"}`}>
+            Documentation
+          </h6>
 
           {/* Bottom Nav Menu */}
           <ul className="flex flex-col">
