@@ -8,15 +8,32 @@ export const Dashboard = () => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <div className="w-full border border-dotted border-red-500 bg-red-100">
+      <div className="w-full border border-dotted border-red-500 bg-gray-100">
         {/* Top Nav Bar */}
-        <nav className="h-10 px-3 border border-dotted border-blue-500 bg-blue-100 flex items-center space-x-3">
-          <button className="border-b hover:border-indigo-500 focus:outline-none">
-            Nav Button
-          </button>
-          <button className="border-b hover:border-indigo-500 focus:outline-none">
-            Nav Button
-          </button>
+        <nav className="h-10 px-3 border border-dotted border-blue-500 bg-blue-100 flex items-center justify-between space-x-3">
+          <div className="flex gap-3">
+            <input
+              className="h-8 border border-gray-500 rounded-3xl"
+              type="text"
+              value="Search"
+            />
+            <button className="border-b hover:border-indigo-500 focus:outline-none">
+              Nav Button
+            </button>
+            <button className="border-b hover:border-indigo-500 focus:outline-none">
+              Nav Button
+            </button>
+          </div>
+
+          {/* Account Container */}
+          <div className="">
+            <button className="w-10 h-full border border-purple-200 rounded-md">
+              !
+            </button>
+            <button className="w-10 h-full border border-purple-200 rounded-md">
+              Profile
+            </button>
+          </div>
         </nav>
 
         {/* Notification Bar */}
