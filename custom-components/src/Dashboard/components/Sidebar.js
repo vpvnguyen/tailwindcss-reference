@@ -38,7 +38,7 @@ export default function Sidebar() {
           isExpanded ? "w-44" : ""
         } bg-white min-h-full flex flex-col flex-nowrap items-center justify-between mx-auto whitespace-nowrap`}
       >
-        <div className="px-2 w-full flex items-center justify-center">
+        <div className="h-10 px-2 w-full flex items-center justify-center">
           {/* Nav Toggle */}
           <button
             className="appearance-none opacity-50 bg-transparent focus:outline-none h-10 w-10 flex items-center justify-center"
