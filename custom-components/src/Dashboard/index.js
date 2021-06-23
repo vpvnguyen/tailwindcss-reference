@@ -85,6 +85,50 @@ export const Dashboard = () => {
               <p>Card Text ----- Large</p>
             </div>
           </section>
+
+          {/* Grid Chart Container */}
+          <section className="border border-yellow-100 grid grid-cols-4 gap-4">
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart 1</h1>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart Title - Medium</h1>
+              <p>Chart Text - Medium</p>
+              <p>Chart Text - Medium</p>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart Title ----- Large</h1>
+              <p>Chart Text ----- Large</p>
+              <p>Chart Text ----- Large</p>
+              <p>Chart Text ----- Large</p>
+              <p>Chart Text ----- Large</p>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart Title -------------------- XLarge</h1>
+              <p>Chart Text -------------------- XLarge</p>
+              <p>Chart Text -------------------- XLarge</p>
+              <p>Chart Text -------------------- XLarge</p>
+              <p>Chart Text -------------------- XLarge</p>
+              <p>Chart Text -------------------- XLarge</p>
+              <p>Chart Text -------------------- XLarge</p>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart 5</h1>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart 6</h1>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart Title ----- Large</h1>
+              <p>Chart Text ----- Large</p>
+              <p>Chart Text ----- Large</p>
+              <p>Chart Text ----- Large</p>
+              <p>Chart Text ----- Large</p>
+            </div>
+            <div className="p-6 border border-yellow-500 rounded-lg">
+              <h1>Chart 8</h1>
+            </div>
+          </section>
         </main>
       </div>
     </div>
