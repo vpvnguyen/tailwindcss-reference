@@ -42,3 +42,7 @@ module.exports = {
 ```
 npm run start
 ```
+
+## Theming
+
+https://github.com/ohitslaurence/react-dynamic-theming
