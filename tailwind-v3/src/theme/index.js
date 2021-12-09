@@ -24,6 +24,7 @@ const themes = {
 
 export const applyTheme = (type) => {
   let themeMap = {};
+
   Object.keys(themes[type]).forEach((style) => {
     themeMap[`--theme-${style}`] = themes[type][style] || "";
   });
